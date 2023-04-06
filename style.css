@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input::-webkit-inner-spin-button, 
+input::-webkit-outer-spin-button {
+    -webkit-appearance:none;
+    margin: 0;
+}
+
+.container {
+    width: 300px;
+    margin: 60px auto;
+}
+
+.number-input {
+    width: 100%;
+    padding: 20px 10px ;
+    background-color: black;
+    border: none;
+    font-family: monospace;
+    color: white;
+    font-size: 2rem;
+    text-align: end;
+}
+
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+
+
+}
+
+.button {
+    background-color: #ccc;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+.orange {
+    background-color: rgb(240, 180, 0);
+}
+
+.orange:hover {
+    background-color:white;
+    color: black;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
+.span-3 {
+    grid-column: span 3;
+}
